@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__menu-burger">
+                <div class="header__logo">
+                    <a href="#"><img src="images/logo.svg" alt="" class="header__logo-img"></a>
+                </div>
+                <div class="header__menu-images">
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                    <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 405.333 405.333"
+                        style="enable-background:new 0 0 405.333 405.333;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <rect x="85.333" y="53.333" width="256" height="42.667" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <rect y="53.333" width="42.667" height="42.667" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <rect y="138.667" width="42.667" height="42.667" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <rect y="224" width="42.667" height="42.667" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <rect y="309.333" width="42.667" height="42.667" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <rect x="85.333" y="309.333" width="320" height="42.667" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <rect x="85.333" y="138.667" width="320" height="42.667" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <rect x="85.333" y="224" width="277.333" height="42.667" />
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">О компании</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Решения</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Продукты</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link-tel"><span>Связаться с нами</span>
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.0018 25.253C20.6589 25.2557 21.3135 25.1702 21.9478 24.9987L21.95 24.9981C22.725 24.7809 23.3856 24.272 23.7935 23.5783C23.7937 23.5779 23.794 23.5775 23.7942 23.5771L25.0145 21.549C25.0145 21.5489 25.0145 21.5489 25.0145 21.5489C25.4726 20.7878 25.2507 19.8011 24.5111 19.3093L19.6527 16.0694L19.6519 16.0689C18.9267 15.5891 17.9545 15.7469 17.4183 16.4316L17.4177 16.4323L16.0025 18.252L16.0025 18.252L16.0006 18.2544C15.8939 18.3951 15.7 18.4359 15.5456 18.3501L15.5449 18.3497L15.2757 18.2013L15.2746 18.2008L15.2676 18.1969C14.3949 17.7212 13.3042 17.1268 11.0916 14.9134C8.87964 12.7006 8.28355 11.609 7.80788 10.7379L7.80361 10.7301L7.8034 10.7297L7.65578 10.4605L7.6558 10.4605L7.6544 10.458C7.5674 10.3035 7.60746 10.1086 7.74836 10.0009L7.74837 10.0009L7.75008 9.99956L9.56855 8.58471L9.56922 8.58418C10.2536 8.04798 10.4117 7.07614 9.93246 6.3507L9.93185 6.34978L6.69189 1.49144C6.69187 1.49142 6.69186 1.49139 6.69184 1.49137C6.2003 0.752074 5.21424 0.530151 4.45334 0.987503C4.45332 0.987516 4.45329 0.98753 4.45327 0.987543L2.42261 2.20736C1.72909 2.61545 1.22029 3.276 1.00282 4.05077L1.00282 4.05076L1.00243 4.05216C0.237122 6.84067 0.853856 11.5298 7.66265 18.3394L7.66267 18.3394C13.0776 23.7539 17.1507 25.2527 20.0018 25.253ZM20.0018 25.253C20.0017 25.253 20.0015 25.253 20.0014 25.253L20.0025 25.003V25.253C20.0022 25.253 20.002 25.253 20.0018 25.253ZM23.8969 20.8805L23.8966 20.881L22.6778 22.9127L22.6778 22.9127L22.6763 22.9152C22.4398 23.32 22.0559 23.6177 21.6049 23.7461C19.2698 24.3868 15.0595 23.8971 8.58221 17.4198C2.10507 10.9427 1.61534 6.73278 2.25595 4.39725C2.38454 3.94564 2.68272 3.56112 3.08815 3.32414L3.08816 3.32416L3.0906 3.32269L5.12231 2.10383L5.12259 2.10366C5.2885 2.00384 5.50357 2.05223 5.61074 2.21344L5.61086 2.21363L7.37096 4.85615L7.37103 4.85624L8.8478 7.07116C8.84788 7.07129 8.84797 7.07142 8.84805 7.07155C8.95273 7.23027 8.91828 7.44279 8.76877 7.56034C8.76866 7.56043 8.76855 7.56052 8.76843 7.56061L6.95112 8.97423C6.29974 9.47298 6.11365 10.3745 6.51447 11.0904C6.51464 11.0907 6.51481 11.091 6.51498 11.0913L6.65797 11.3512C6.65805 11.3513 6.65812 11.3514 6.6582 11.3516C7.17931 12.3073 7.82887 13.4937 10.1681 15.8325L10.3448 15.6557L10.1681 15.8325C12.5071 18.1711 13.6931 18.8208 14.6484 19.3418C14.6486 19.3419 14.6488 19.342 14.6489 19.3421L14.9092 19.4855C14.9095 19.4857 14.9097 19.4858 14.91 19.486C15.6258 19.8868 16.5275 19.7008 17.0263 19.0494C17.0265 19.0491 17.0267 19.0488 17.0269 19.0485L18.4398 17.2322C18.4399 17.232 18.44 17.2319 18.4401 17.2318C18.5577 17.0825 18.77 17.0479 18.9289 17.1524C18.9291 17.1525 18.9293 17.1527 18.9295 17.1528L23.7868 20.3923L23.7872 20.3926C23.9484 20.4997 23.9968 20.7147 23.8969 20.8805Z"
+                                        fill="white" stroke="white" stroke-width="0.5" />
+                                    <path
+                                        d="M22.4493 11.8011V11.8008C22.4445 7.46731 18.9328 3.95549 14.5993 3.95074H14.599C14.24 3.95074 13.949 4.24174 13.949 4.60075C13.949 4.95966 14.2398 5.2506 14.5987 5.25075C18.2148 5.25477 21.1453 8.18525 21.1493 11.8014C21.1495 12.1603 21.4404 12.4511 21.7993 12.4511C22.1583 12.4511 22.4493 12.1601 22.4493 11.8011Z"
+                                        fill="white" stroke="white" stroke-width="0.5" />
+                                    <path
+                                        d="M20.0492 11.8011V11.8008C20.0457 8.79233 17.6077 6.35433 14.5993 6.35089H14.599C14.24 6.35089 13.949 6.64189 13.949 7.0009C13.949 7.3598 14.2398 7.65074 14.5987 7.6509C16.8898 7.6536 18.7465 9.51027 18.7492 11.8014C18.7494 12.1603 19.0404 12.4511 19.3992 12.4511C19.7582 12.4511 20.0492 12.1601 20.0492 11.8011Z"
+                                        fill="white" stroke="white" stroke-width="0.5" />
+                                    <path
+                                        d="M17.6485 11.8003L17.6485 11.8005C17.6485 12.1595 17.3574 12.4505 16.9985 12.4505C16.6397 12.4505 16.3487 12.1596 16.3486 11.8007M17.6485 11.8003L16.5986 11.8005M17.6485 11.8003C17.6465 10.117 16.2825 8.75287 14.5992 8.75098H14.5989C14.2399 8.75098 13.949 9.04194 13.949 9.4009C13.949 9.75976 14.2398 10.0507 14.5986 10.0508M17.6485 11.8003L14.5989 9.80083M16.3486 11.8007C16.3486 11.8007 16.3486 11.8006 16.3486 11.8005H16.5986M16.3486 11.8007C16.3486 11.8008 16.3486 11.8008 16.3486 11.8009L16.5986 11.8005M16.3486 11.8007C16.3473 10.8347 15.5645 10.052 14.5986 10.0508M16.5986 11.8005C16.5973 10.6967 15.7027 9.80214 14.5989 9.80083M14.5986 10.0508C14.5987 10.0508 14.5988 10.0508 14.5989 10.0508V9.80083M14.5986 10.0508L14.5989 9.80083"
+                                        fill="white" stroke="white" stroke-width="0.5" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__list">
+                        <li class="header__item-social">
+                            <a href="#">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.5 0C5.5975 0 0 5.5975 0 12.5C0 19.4025 5.5975 25 12.5 25C19.4025 25 25 19.4025 25 12.5C25 5.5975 19.4025 0 12.5 0ZM8.86765 18.8965H5.82333V9.73759H8.86765V18.8965ZM7.34558 8.48694H7.32574C6.30417 8.48694 5.64346 7.7837 5.64346 6.90479C5.64346 6.00605 6.32439 5.32227 7.3658 5.32227C8.40721 5.32227 9.04808 6.00605 9.06792 6.90479C9.06792 7.7837 8.40721 8.48694 7.34558 8.48694ZM19.8448 18.8965H16.8009V13.9967C16.8009 12.7653 16.3601 11.9255 15.2586 11.9255C14.4176 11.9255 13.9168 12.492 13.6967 13.0388C13.6162 13.2345 13.5965 13.508 13.5965 13.7817V18.8965H10.5524C10.5524 18.8965 10.5923 10.5968 10.5524 9.73759H13.5965V11.0344C14.0011 10.4103 14.7249 9.52263 16.3401 9.52263C18.343 9.52263 19.8448 10.8316 19.8448 13.6448V18.8965Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header__item-social">
+                            <a href="#">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25 12.5C25 5.5957 19.4043 0 12.5 0C5.5957 0 0 5.5957 0 12.5C0 19.4043 5.5957 25 12.5 25C12.5732 25 12.6465 25 12.7197 24.9951V15.2686H10.0342V12.1387H12.7197V9.83398C12.7197 7.16309 14.3506 5.70801 16.7334 5.70801C17.876 5.70801 18.8574 5.79102 19.1406 5.83008V8.62305H17.5C16.2061 8.62305 15.9521 9.23828 15.9521 10.1416V12.1338H19.0527L18.6475 15.2637H15.9521V24.5166C21.1768 23.0176 25 18.208 25 12.5Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header__item-social">
+                            <a href="#">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.8926 12.5C14.8926 13.8214 13.8214 14.8926 12.5 14.8926C11.1786 14.8926 10.1074 13.8214 10.1074 12.5C10.1074 11.1786 11.1786 10.1074 12.5 10.1074C13.8214 10.1074 14.8926 11.1786 14.8926 12.5Z"
+                                        fill="white" />
+                                    <path
+                                        d="M18.0954 8.26691C17.9804 7.95525 17.7969 7.67316 17.5585 7.4416C17.327 7.20319 17.0451 7.0197 16.7332 6.90469C16.4803 6.80646 16.1003 6.68954 15.4005 6.65768C14.6435 6.62316 14.4165 6.61572 12.5 6.61572C10.5833 6.61572 10.3564 6.62297 9.59953 6.65749C8.89972 6.68954 8.51958 6.80646 8.26686 6.90469C7.95501 7.0197 7.67291 7.20319 7.44155 7.4416C7.20313 7.67316 7.01965 7.95506 6.90444 8.26691C6.80621 8.51983 6.68929 8.89996 6.65744 9.59977C6.62292 10.3566 6.61548 10.5836 6.61548 12.5003C6.61548 14.4168 6.62292 14.6438 6.65744 15.4008C6.68929 16.1006 6.80621 16.4805 6.90444 16.7334C7.01965 17.0453 7.20294 17.3272 7.44136 17.5588C7.67291 17.7972 7.95482 17.9807 8.26667 18.0957C8.51958 18.1941 8.89972 18.311 9.59953 18.3429C10.3564 18.3774 10.5831 18.3846 12.4998 18.3846C14.4167 18.3846 14.6437 18.3774 15.4003 18.3429C16.1002 18.311 16.4803 18.1941 16.7332 18.0957C17.3592 17.8542 17.854 17.3594 18.0954 16.7334C18.1937 16.4805 18.3106 16.1006 18.3426 15.4008C18.3771 14.6438 18.3844 14.4168 18.3844 12.5003C18.3844 10.5836 18.3771 10.3566 18.3426 9.59977C18.3108 8.89996 18.1938 8.51983 18.0954 8.26691ZM12.5 16.1858C10.4643 16.1858 8.81408 14.5358 8.81408 12.5001C8.81408 10.4644 10.4643 8.81432 12.5 8.81432C14.5356 8.81432 16.1858 10.4644 16.1858 12.5001C16.1858 14.5358 14.5356 16.1858 12.5 16.1858ZM16.3315 9.52996C15.8558 9.52996 15.4702 9.14429 15.4702 8.6686C15.4702 8.19291 15.8558 7.80724 16.3315 7.80724C16.8072 7.80724 17.1929 8.19291 17.1929 8.6686C17.1927 9.14429 16.8072 9.52996 16.3315 9.52996Z"
+                                        fill="white" />
+                                    <path
+                                        d="M12.5 0C5.5975 0 0 5.5975 0 12.5C0 19.4025 5.5975 25 12.5 25C19.4025 25 25 19.4025 25 12.5C25 5.5975 19.4025 0 12.5 0ZM19.6344 15.4593C19.5997 16.2233 19.4782 16.745 19.3008 17.2016C18.928 18.1658 18.1658 18.928 17.2016 19.3008C16.7452 19.4782 16.2233 19.5995 15.4594 19.6344C14.694 19.6693 14.4495 19.6777 12.5002 19.6777C10.5507 19.6777 10.3064 19.6693 9.54075 19.6344C8.77686 19.5995 8.255 19.4782 7.79858 19.3008C7.31945 19.1206 6.88572 18.8381 6.52714 18.4729C6.16207 18.1145 5.87959 17.6805 5.69935 17.2016C5.52197 16.7452 5.40047 16.2233 5.36575 15.4594C5.33047 14.6938 5.32227 14.4493 5.32227 12.5C5.32227 10.5507 5.33047 10.3062 5.36556 9.54075C5.40028 8.77666 5.52158 8.255 5.69897 7.79839C5.87921 7.31945 6.16188 6.88553 6.52714 6.52714C6.88553 6.16188 7.31945 5.8794 7.79839 5.69916C8.255 5.52177 8.77666 5.40047 9.54075 5.36556C10.3062 5.33066 10.5507 5.32227 12.5 5.32227C14.4493 5.32227 14.6938 5.33066 15.4593 5.36575C16.2233 5.40047 16.745 5.52177 17.2016 5.69897C17.6805 5.87921 18.1145 6.16188 18.4731 6.52714C18.8381 6.88572 19.1208 7.31945 19.3008 7.79839C19.4784 8.255 19.5997 8.77666 19.6346 9.54075C19.6695 10.3062 19.6777 10.5507 19.6777 12.5C19.6777 14.4493 19.6695 14.6938 19.6344 15.4593Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header__item-social">
+                            <a href="#">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.9429 14.8419L15.009 12.5L10.9429 10.1582V14.8419Z" fill="white" />
+                                    <path
+                                        d="M12.5 0C5.5975 0 0 5.5975 0 12.5C0 19.4025 5.5975 25 12.5 25C19.4025 25 25 19.4025 25 12.5C25 5.5975 19.4025 0 12.5 0ZM20.3106 12.5128C20.3106 12.5128 20.3106 15.0478 19.989 16.2703C19.8088 16.9394 19.2812 17.4669 18.6121 17.647C17.3897 17.9688 12.5 17.9688 12.5 17.9688C12.5 17.9688 7.6231 17.9688 6.3879 17.6342C5.7188 17.4541 5.19123 16.9264 5.01099 16.2573C4.68922 15.0478 4.68922 12.5 4.68922 12.5C4.68922 12.5 4.68922 9.96513 5.01099 8.74271C5.19104 8.07362 5.73158 7.53307 6.3879 7.35302C7.61032 7.03125 12.5 7.03125 12.5 7.03125C12.5 7.03125 17.3897 7.03125 18.6121 7.3658C19.2812 7.54585 19.8088 8.07362 19.989 8.74271C20.3236 9.96513 20.3106 12.5128 20.3106 12.5128Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__list">
+                        <li class="header__item-eng">
+                            <a class="header__link-eng" href="#">RU</a>
+                        </li>
+                        <li class="header__item-eng">
+                            <a class="header__link-eng" href="#">UA</a>
+                        </li>
+                        <li class="header__item-eng">
+                            <a class="header__link-eng" href="#">EN</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="bg">
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="swiper__img" src="images/bg.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper__img" src="images/bg.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper__img" src="images/bg.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper__img" src="images/bg.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper__img" src="images/bg.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <h1 class="header__title">
+            О компании
+        </h1>
+    </section>
+    <section class="aboute">
+        <div class="container">
+            <div class="aboute__header">
+                <h2 class="aboute__title">О компании</h2>
+            </div>
+            <div class="aboute__inner">
+                <div class="aboute__item">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="aboute__video col-md-5">
+                            <iframe width="605" height="461" src="https://www.youtube.com/embed/PD7YJ2LliZc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="aboute__items">
+                                <div class="aboute__info">
+                                    <p class="aboute__text">AVA TECH - производитель профессиональных комплексных
+                                        световых
+                                        решений для Retail. Наша миссия сделать ваш бизнес эффективным и успешным с
+                                        помощью
+                                        индивидуальных концепций освещения.</p>
+                                    <p>Мы знаем, как с помощью света расставить точные
+                                        акценты, привлечь внимание покупателей, увеличить ваши продажи и улучшить
+                                        презентацию
+                                        товаров любого сегмента.</p>
+                                </div>
+                            </div>
+                            <div class="aboute__top">
+                                <div class="row">
+                                    <div class="aboute__top-item col-2">
+                                        <div class="aboute__top-title">7</div>
+                                        <p class="aboute__top-text">років <br> на ринку</p>
+                                    </div>
+                                    <div class="aboute__top-item col-3">
+                                        <div class="aboute__top-title">50</div>
+                                        <p class="aboute__top-text">кращих <br> фахівців</p>
+                                    </div>
+                                    <div class="aboute__top-item col-3">
+                                        <div class="aboute__top-title">40+</div>
+                                        <p class="aboute__top-text">компаній-клієнтів <br> в Україні та Європі</p>
+                                    </div>
+                                    <div class="aboute__top-item col-4">
+                                        <div class="aboute__top-title">750</div>
+                                        <p class="aboute__top-text">реалізованих проектів <br> різних площ і масштабів
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__inner">
+                <div class="row justify-content-between align-items-center">
+                    <div class="advantages__item-white col-md-6">
+                        <div class="row justify-content-between">
+                            <div class="col-12 col-sm-4">
+                                <div class="advantages__item">
+                                    <div class="advantages__images">
+                                        <img class="advantages__img" src="images/advantages/1.svg" alt="">
+                                    </div>
+                                    <div class="advantages__info">
+                                        <p class="advantages__text">Собственное производство и склад</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="advantages__item">
+                                    <div class="advantages__images">
+                                        <img class="advantages__img" src="images/advantages/2.svg" alt="">
+                                    </div>
+                                    <div class="advantages__info">
+                                        <p class="advantages__text">Разработка новых продуктов и решений</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="advantages__item">
+                                    <div class="advantages__images">
+                                        <img class="advantages__img" src="images/advantages/3.svg" alt="">
+                                    </div>
+                                    <div class="advantages__info">
+                                        <p class="advantages__text">Индивидуальный проект для каждого обьекта</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="advantages__item-black col-md-6">
+                        <div class="row">
+                            <div class="col-12 col-sm-4">
+                                <div class="advantages__item">
+                                    <div class="advantages__images-black">
+                                        <img class="advantages__img" src="images/advantages/4.svg" alt="">
+                                    </div>
+                                    <div class="advantages__info">
+                                        <p class="advantages__text black">Команда профессионалов</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="advantages__item">
+                                    <div class="advantages__images-black">
+                                        <img class="advantages__img" src="images/advantages/5.svg" alt="">
+                                    </div>
+                                    <div class="advantages__info">
+                                        <p class="advantages__text black">Мировые поставщики комплектующих</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="advantages__item">
+                                    <div class="advantages__images-black">
+                                        <img class="advantages__img" src="images/advantages/6.svg" alt="">
+                                    </div>
+                                    <div class="advantages__info">
+                                        <p class="advantages__text black">Больше 1000 реализованых проектов</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mission">
+        <div class="container">
+            <div class="mission__inner">
+                <img src="images/mission/mission-bg.png" alt="">
+                <div class="row flex-wrap">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="mission__item">
+                            <div class="mission__header">
+                                <h2 class="mission__title">Наша миссия</h2>
+                            </div>
+                            <div class="mission__info">
+                                <p class="mission__text">AVA TECH - производитель профессиональных комплексных световых
+                                    решений для Retail. Наша миссия сделать ваш бизнес эффективным и успешным с помощью
+                                    индивидуальных концепций освещения.</p>
+                                <p>Мы знаем, как с помощью света расставить точные
+                                    акценты, привлечь внимание покупателей, увеличить ваши продажи и улучшить
+                                    презентацию товаров любого сегмента.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="mission__item">
+                            <div class="mission__header">
+                                <h2 class="mission__title">Наша миссия</h2>
+                            </div>
+                            <div class="mission__info">
+                                <p class="mission__text">Дизайнеры и инженеры компании Ava Tech самостоятельно
+                                    проектируют, разрабатывают и воплощают в жизнь дизайн наших светильников. Уникальный
+                                    дизайн в сочетании с высокими техническими характеристиками вот что выделяет нашу
+                                    продукцию и подчеркивает индивидуальность вашего бренда.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mission__item-button">
+                    <div class="col-md-12 col-lg-4">
+                        <div class="mission__header">
+                            <h2 class="mission__title">Наша миссия</h2>
+                        </div>
+                        <div class="mission__info">
+                            <p class="mission__text">Вся продукция, производимая AVA TECH, сертифицирована,
+                                соответствует украинским и европейским стандартам, а также проходит испытания в
+                                независимых государственных лабораториях.</p>
+                            <p class="mission__text">Среди наших поставщиков исключительно надёжные и известные
+                                компании-производители, качество комплектующих которых подтверждено международными
+                                сертификатами.</p>
+                            <p class="mission__text">Мы несем полную ответственность за выполненную нами работу, поэтому
+                                предоставляем официальную гарантию на период от 5 лет и больше, в зависимости от
+                                проекта.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project">
+        <div class="container">
+            <div class="project__inner">
+                <div class="project__header-header">
+                    <h2 class="project__title-title">Реализованые проекты</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="project__item">
+                            <div class="project__images-left">
+                                <img src="images/project/1.jpg" alt="" class="project__img-left">
+                                <h3 class="project__title">МегаМаркет</h3>
+                                <div class="project__hover-left">
+                                    <div>
+                                        <div class="project__hover-header__left">
+                                            <h3 class="project__hover-title">МегаМаркет</h3>
+                                        </div>
+                                        <div class="project__hover-info__left">
+                                            <p class="project__hover-text">Полная замена системы освещения на LED.
+                                                Поставка и монтаж новых светильников</p>
+                                        </div>
+                                        <div class="project__hover-button__left">
+                                            <a href="#" class="project__hover-btn">Подробней</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="project__item">
+                                    <div class="project__images">
+                                        <img src="images/project/2.jpg" alt="" class="project__img">
+                                        <h3 class="project__title">АТБ</h3>
+                                    </div>
+                                    <div class="project__hover">
+                                        <div>
+                                            <div class="project__hover-header">
+                                                <h3 class="project__hover-title">МегаМаркет</h3>
+                                            </div>
+                                            <div class="project__hover-info">
+                                                <p class="project__hover-text">Полная замена системы освещения на LED.
+                                                    Поставка и монтаж новых светильников</p>
+                                            </div>
+                                            <div class="project__hover-button">
+                                                <a href="#" class="project__hover-btn">Подробней</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="project__item">
+                                    <div class="project__images">
+                                        <img src="images/project/3.jpg" alt="" class="project__img">
+                                        <h3 class="project__title">Brocard</h3>
+                                    </div>
+                                    <div class="project__hover">
+                                        <div>
+                                            <div class="project__hover-header">
+                                                <h3 class="project__hover-title">МегаМаркет</h3>
+                                            </div>
+                                            <div class="project__hover-info">
+                                                <p class="project__hover-text">Полная замена системы освещения на LED.
+                                                    Поставка и монтаж новых светильников</p>
+                                            </div>
+                                            <div class="project__hover-button">
+                                                <a href="#" class="project__hover-btn">Подробней</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="project__item">
+                                    <div class="project__images">
+                                        <img src="images/project/4.jpg" alt="" class="project__img">
+                                        <h3 class="project__title">Douglas</h3>
+                                    </div>
+                                    <div class="project__hover">
+                                        <div>
+                                            <div class="project__hover-header">
+                                                <h3 class="project__hover-title">МегаМаркет</h3>
+                                            </div>
+                                            <div class="project__hover-info">
+                                                <p class="project__hover-text">Полная замена системы освещения на LED.
+                                                    Поставка и монтаж новых светильников</p>
+                                            </div>
+                                            <div class="project__hover-button">
+                                                <a href="#" class="project__hover-btn">Подробней</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="project__item">
+                                    <div class="project__images">
+                                        <img src="images/project/5.jpg" alt="" class="project__img">
+                                        <h3 class="project__title">Eva</h3>
+                                    </div>
+                                    <div class="project__hover">
+                                        <div>
+                                            <div class="project__hover-header">
+                                                <h3 class="project__hover-title">МегаМаркет</h3>
+                                            </div>
+                                            <div class="project__hover-info">
+                                                <p class="project__hover-text">Полная замена системы освещения на LED.
+                                                    Поставка и монтаж новых светильников</p>
+                                            </div>
+                                            <div class="project__hover-button">
+                                                <a href="#" class="project__hover-btn">Подробней</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="project__button-btn">Больше проектов
+                <svg width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 0.997314L12.5 10.9973L1 0.997313" stroke="black" />
+                </svg>
+            </button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="row justify-content-between">
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="footer__item">
+                            <div class="footer__logo">
+                                <a href="#"><img src="images/footer__logo.svg" alt="" class="footer__logo-img"></a>
+                            </div>
+                            <div class="footer__copyright">
+                                <a href="#" class="footer__copyright-text">Copyright Ava Tech 2021</a>
+                            </div>
+                            <div class="footer__policy">
+                                <a href="#" class="footer__policy-text">Политика конфиденциальности</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="footer__item">
+                            <nav class="footer__menu">
+                                <ul class="footer__list">
+                                    <li class="footer__menu-item"><a href="#" class="footer__link">Главная</a></li>
+                                    <li class="footer__menu-item"><a href="#" class="footer__link">О нас</a></li>
+                                    <li class="footer__menu-item"><a href="#" class="footer__link">Проекты</a></li>
+                                    <li class="footer__menu-item"><a href="#" class="footer__link">Продукты</a></li>
+                                    <li class="footer__menu-item"><a href="#" class="footer__link">Решения</a></li>
+                                    <li class="footer__menu-item"><a href="#" class="footer__link">Блог</a></li>
+                                    <li class="footer__menu-item"><a href="#" class="footer__link">Контакты</a></li>
+                                    <li class="footer__menu-item"><a href="#" class="footer__link">Сертификаты</a></li>
+                                    <li class="footer__menu-item"><a href="#" class="footer__link">Карта сайта</a></li>
+                                    <li class="footer__menu-item"><a href="#" class="footer__link">Производство</a></li>
+                                    <li class="footer__menu-item"><a href="#" class="footer__link">Сервис</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer__item">
+                            <div class="footer__giografi">
+                                <div class="footer__giografi-item">
+                                    <a href="#" class="footer__giografi-link">УКРАИНА
+                                        <svg width="39" height="8" viewBox="0 0 39 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M38.3536 4.35355C38.5488 4.15829 38.5488 3.84171 38.3536 3.64645L35.1716 0.464466C34.9763 0.269204 34.6597 0.269204 34.4645 0.464466C34.2692 0.659728 34.2692 0.976311 34.4645 1.17157L37.2929 4L34.4645 6.82843C34.2692 7.02369 34.2692 7.34027 34.4645 7.53553C34.6597 7.7308 34.9763 7.7308 35.1716 7.53553L38.3536 4.35355ZM0 4.5L38 4.5V3.5L0 3.5L0 4.5Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="footer__giografi-item">
+                                    <a href="#" class="footer__giografi-link">ГЕРМАНИЯ
+                                        <svg width="39" height="8" viewBox="0 0 39 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M38.3536 4.35355C38.5488 4.15829 38.5488 3.84171 38.3536 3.64645L35.1716 0.464466C34.9763 0.269204 34.6597 0.269204 34.4645 0.464466C34.2692 0.659728 34.2692 0.976311 34.4645 1.17157L37.2929 4L34.4645 6.82843C34.2692 7.02369 34.2692 7.34027 34.4645 7.53553C34.6597 7.7308 34.9763 7.7308 35.1716 7.53553L38.3536 4.35355ZM0 4.5L38 4.5V3.5L0 3.5L0 4.5Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="footer__giografi-item">
+                                    <a href="#" class="footer__giografi-link">БЕЛОРУСЬ
+                                        <svg width="39" height="8" viewBox="0 0 39 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M38.3536 4.35355C38.5488 4.15829 38.5488 3.84171 38.3536 3.64645L35.1716 0.464466C34.9763 0.269204 34.6597 0.269204 34.4645 0.464466C34.2692 0.659728 34.2692 0.976311 34.4645 1.17157L37.2929 4L34.4645 6.82843C34.2692 7.02369 34.2692 7.34027 34.4645 7.53553C34.6597 7.7308 34.9763 7.7308 35.1716 7.53553L38.3536 4.35355ZM0 4.5L38 4.5V3.5L0 3.5L0 4.5Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="footer__giografi-item">
+                                    <a href="#" class="footer__giografi-link">ПОЛЬША
+                                        <svg width="39" height="8" viewBox="0 0 39 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M38.3536 4.35355C38.5488 4.15829 38.5488 3.84171 38.3536 3.64645L35.1716 0.464466C34.9763 0.269204 34.6597 0.269204 34.4645 0.464466C34.2692 0.659728 34.2692 0.976311 34.4645 1.17157L37.2929 4L34.4645 6.82843C34.2692 7.02369 34.2692 7.34027 34.4645 7.53553C34.6597 7.7308 34.9763 7.7308 35.1716 7.53553L38.3536 4.35355ZM0 4.5L38 4.5V3.5L0 3.5L0 4.5Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="footer__item">
+                            <div class="footer__info-item">
+                                <div class="footer__email">
+                                    <p class="footer__email-title">Адрес:</p>
+                                </div>
+                                <div class="footer__email-info">
+                                    <a href="#" class="footer__email-text">вул. Вацлава Гавела 4,
+                                        Киев, Украина, 02000</a>
+                                </div>
+                            </div>
+                            <div class="footer__info-item">
+                                <div class="footer__email">
+                                    <p class="footer__email-title">Номер телефона:</p>
+                                </div>
+                                <div class="footer__email-info">
+                                    <a href="tel:380443511999" class="footer__email-text">+38 (044) 351 19 99</a> <br>
+                                    <a href="tel:380673864474" class="footer__email-text">+38 (067) 386 44 74</a>
+                                </div>
+                            </div>
+                            <div class="footer__info-item">
+                                <div class="footer__email">
+                                    <p class="footer__email-title">Почта:</p>
+                                </div>
+                                <div class="footer__email-info">
+                                    <a href="mailto:info@ava-tech.com.ua"
+                                        class="footer__email-text">info@ava-tech.com.ua</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer__item-right">
+                            <div class="footer__button">
+                                <a href="#" class="footer__btn">Обратный звонок</a>
+                            </div>
+                            <div class="footer__social">
+                                <div class="footer__social-item">
+                                    <a href="#">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.2454 0.000488281H6.49545C3.32224 0.000488281 0.740723 2.582 0.740723 5.75521V15.5053C0.740723 18.6784 3.32224 21.2599 6.49545 21.2599H16.2456C19.4186 21.2599 22.0001 18.6784 22.0001 15.5053V5.75521C22.0001 2.582 19.4186 0.000488281 16.2454 0.000488281V0.000488281ZM20.7538 15.5053C20.7538 17.9911 18.7314 20.0136 16.2454 20.0136H6.49545C4.00946 20.0136 1.98704 17.9911 1.98704 15.5053V5.75521C1.98704 3.26923 4.00946 1.2468 6.49545 1.2468H16.2456C18.7314 1.2468 20.7538 3.26923 20.7538 5.75521V15.5053Z"
+                                                fill="white" />
+                                            <path
+                                                d="M11.3696 4.81714C8.16427 4.81714 5.55664 7.42477 5.55664 10.6301C5.55664 13.8354 8.16427 16.443 11.3696 16.443C14.5749 16.443 17.1825 13.8354 17.1825 10.6301C17.1825 7.42477 14.5749 4.81714 11.3696 4.81714ZM11.3696 15.1967C8.85166 15.1967 6.80296 13.1482 6.80296 10.6301C6.80296 8.11216 8.85166 6.06345 11.3696 6.06345C13.8877 6.06345 15.9362 8.11216 15.9362 10.6301C15.9362 13.1482 13.8877 15.1967 11.3696 15.1967Z"
+                                                fill="white" />
+                                            <path
+                                                d="M17.3222 2.75293C16.3749 2.75293 15.6045 3.52352 15.6045 4.47059C15.6045 5.41781 16.3749 6.18841 17.3222 6.18841C18.2694 6.18841 19.04 5.41781 19.04 4.47059C19.04 3.52336 18.2694 2.75293 17.3222 2.75293ZM17.3222 4.94193C17.0623 4.94193 16.8508 4.73043 16.8508 4.47059C16.8508 4.21059 17.0623 3.99925 17.3222 3.99925C17.5822 3.99925 17.7937 4.21059 17.7937 4.47059C17.7937 4.73043 17.5822 4.94193 17.3222 4.94193Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="footer__social-item">
+                                    <a href="#">
+                                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.1787 8.26269L10.7129 5.27204C10.3987 5.10009 10.0272 5.1065 9.71914 5.28903C9.4109 5.47175 9.22705 5.79452 9.22705 6.15278V12.0827C9.22705 12.4393 9.40977 12.7615 9.71593 12.9444C9.8758 13.0399 10.053 13.0879 10.2307 13.0879C10.3934 13.0879 10.5565 13.0477 10.7065 12.9669L16.1725 10.0277C16.497 9.85315 16.6995 9.51584 16.701 9.1472C16.7023 8.77856 16.5023 8.43974 16.1787 8.26269ZM10.6769 11.3368V6.90478L14.7619 9.14003L10.6769 11.3368Z"
+                                                fill="white" />
+                                            <path
+                                                d="M24.5586 4.42274L24.5575 4.41141C24.5366 4.21228 24.328 2.44099 23.4669 1.54006C22.4716 0.480384 21.3432 0.351652 20.8005 0.289929C20.7556 0.284833 20.7144 0.280114 20.6776 0.275206L20.6344 0.270676C17.3637 0.0328435 12.4241 0.000377512 12.3746 0.000188756L12.3703 0L12.366 0.000188756C12.3165 0.000377512 7.37696 0.0328435 4.07675 0.270676L4.03315 0.275206C3.99804 0.279925 3.95934 0.284266 3.91725 0.289174C3.38081 0.351086 2.2645 0.480006 1.26636 1.578C0.446219 2.4693 0.209141 4.20265 0.184792 4.39744L0.181961 4.42274C0.174599 4.5056 0 6.47829 0 8.45872V10.31C0 12.2905 0.174599 14.2631 0.181961 14.3462L0.183282 14.3587C0.204234 14.5546 0.41262 16.2934 1.26976 17.1947C2.20561 18.2189 3.38892 18.3544 4.02541 18.4273C4.12601 18.4388 4.21265 18.4486 4.27173 18.459L4.32893 18.4669C6.21743 18.6466 12.1385 18.7351 12.3896 18.7387L12.3971 18.7389L12.4047 18.7387C12.4541 18.7385 17.3935 18.7061 20.6642 18.4683L20.7075 18.4637C20.7488 18.4582 20.7952 18.4533 20.8462 18.4481C21.3796 18.3914 22.4899 18.2738 23.4742 17.1908C24.2944 16.2993 24.5317 14.5659 24.5558 14.3713L24.5586 14.346C24.566 14.263 24.7408 12.2905 24.7408 10.31V8.45872C24.7406 6.47829 24.566 4.50579 24.5586 4.42274ZM23.2908 10.31C23.2908 12.143 23.1307 14.0308 23.1156 14.2041C23.0541 14.6814 22.804 15.7781 22.4044 16.2124C21.7883 16.8903 21.1554 16.9574 20.6933 17.0063C20.6374 17.0122 20.5857 17.0178 20.5389 17.0237C17.3754 17.2525 12.6223 17.2876 12.4033 17.2889C12.1578 17.2853 6.32332 17.196 4.49239 17.026C4.39858 17.0107 4.29722 16.999 4.19038 16.9869C3.64846 16.9248 2.90665 16.8399 2.33623 16.2124L2.32283 16.1981C1.93022 15.789 1.68729 14.7635 1.62557 14.2097C1.61405 14.0787 1.44983 12.1687 1.44983 10.31V8.45872C1.44983 6.62778 1.60952 4.74211 1.625 4.56525C1.69843 4.00295 1.95325 2.97272 2.33623 2.55632C2.97121 1.85792 3.64072 1.78053 4.08354 1.72938C4.12583 1.72447 4.16528 1.71994 4.20171 1.71522C7.41131 1.48532 12.1985 1.45115 12.3703 1.44983C12.5421 1.45097 17.3276 1.48532 20.5087 1.71522C20.5478 1.72013 20.5904 1.72504 20.6363 1.73032C21.0918 1.78223 21.7802 1.86076 22.4119 2.53461L22.4178 2.54084C22.8104 2.94988 23.0533 3.99332 23.115 4.55826C23.126 4.6819 23.2908 6.59607 23.2908 8.45872V10.31Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="footer__social-item">
+                                    <a href="#">
+                                        <svg width="14" height="24" viewBox="0 0 14 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.64758 24H4.69753C4.03774 24 3.50103 23.4778 3.50103 22.8358V14.1669H1.19649C0.53671 14.1669 0 13.6445 0 13.0027V9.28802C0 8.64606 0.53671 8.12384 1.19649 8.12384H3.50103V6.26367C3.50103 4.41925 4.09627 2.85004 5.2222 1.72595C6.3532 0.596741 7.93378 0 9.79307 0L12.8056 0.00476072C13.4642 0.00585938 14 0.528076 14 1.16895V4.61792C14 5.25989 13.4635 5.7821 12.8039 5.7821L10.7756 5.78284C10.157 5.78284 9.99952 5.9035 9.96583 5.94049C9.91032 6.00183 9.84426 6.17523 9.84426 6.65405V8.12366H12.6515C12.8628 8.12366 13.0675 8.17438 13.2435 8.26996C13.6231 8.47632 13.859 8.86652 13.859 9.28821L13.8575 13.0029C13.8575 13.6445 13.3208 14.1667 12.661 14.1667H9.84426V22.8358C9.84426 23.4778 9.30736 24 8.64758 24ZM4.94707 22.593H8.39804V13.537C8.39804 13.1083 8.75654 12.7597 9.1969 12.7597H12.4115L12.4128 9.53082H9.19671C8.75635 9.53082 8.39804 9.18219 8.39804 8.75354V6.65405C8.39804 6.10437 8.45544 5.47925 8.88187 5.0094C9.39713 4.44141 10.2092 4.37585 10.7752 4.37585L12.554 4.37512V1.41138L9.79195 1.40698C6.80391 1.40698 4.94707 3.26807 4.94707 6.26367V8.75354C4.94707 9.18201 4.58876 9.53082 4.1484 9.53082H1.44603V12.7597H4.1484C4.58876 12.7597 4.94707 13.1083 4.94707 13.537V22.593ZM12.8028 1.41174H12.8029H12.8028Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__butoon-up">
+                                <a href="#"><svg width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M23 0C10.317 0 0 10.317 0 23C0 35.683 10.317 46 23 46C35.683 46 46 35.6812 46 23C46 10.3188 35.683 0 23 0ZM23 42.4369C12.2839 42.4369 3.56311 33.7179 3.56311 23C3.56311 12.2821 12.2839 3.56311 23 3.56311C33.7179 3.56311 42.4369 12.2821 42.4369 23C42.4369 33.7179 33.7161 42.4369 23 42.4369Z"
+                                            fill="white" />
+                                        <path
+                                            d="M33.1726 25.4587L24.2648 16.5509C23.5699 15.8597 22.4476 15.8597 21.7527 16.5509L12.8449 25.4587C12.2731 26.125 12.2731 27.1103 12.8449 27.7765C13.4845 28.523 14.6104 28.6103 15.3569 27.9707L22.9999 20.3279L30.6606 27.9708C31.3554 28.662 32.4778 28.662 33.1726 27.9708C33.8639 27.2759 33.8639 26.1535 33.1726 25.4587Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>
