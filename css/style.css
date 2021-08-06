@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
 }
-
 @font-face {
     font-family: "GothaPro"; 
     src: url("../fonts/GothaPro.otf") format("truetype"); 
@@ -910,6 +909,7 @@
         width: 100%;
         z-index: 2;
         height: 100vh;
+        overflow: auto;
     }
     .header__list:first-child{
         padding-left: 0;
@@ -922,6 +922,9 @@
         text-align: center;
         margin-top: 40px;
         margin-bottom: 0px !important;
+    }
+    .header__list:last-child{
+        margin-bottom: 50px !important;
     }
     .header__item{
         margin: 30px 0;
@@ -970,7 +973,7 @@
         height: 100%;
     }
     .advantages__item{
-        max-width: 140px;
+        max-width: 180px !important;
     }
     .advantages__info{
         text-align: center;
@@ -1023,7 +1026,7 @@
         margin-top: 70px;
     }
     .advantages__text{
-        font-size: 11px;
+        font-size: 14px;
     }
     .aboute{
         margin-top: 20px;
@@ -1037,9 +1040,6 @@
     }
     .aboute__top-title{
         font-size: 32px;
-    }
-    .aboute__top-text{
-        font-size: 11px;
     }
     .aboute__top{
         padding-top: 20px;
@@ -1066,8 +1066,16 @@
         padding-bottom: 20px;
     }
     .advantages__img{
-        max-width: 100%;
+        max-width: 95px;
         margin: 0 auto;
+    }
+    .mission{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .advantages__item-black{
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
     .advantages__item{
         padding-bottom: 20px;
@@ -1075,27 +1083,66 @@
     .advantages__item-black{
         height: 100%;
     }
+    .footer__butoon-up{
+        text-align: right;
+        padding-top: 30px;
+    }
+    .project__images-left{
+        height: 420px;
+    }
 }
 @media (max-width: 420px){
+    .bg{
+        height: 570px;
+    }
     .advantages__item-black{
         padding-top: 10px !important;
     }
     .advantages__item{
         margin: 0 auto;
     }
-    .advantages__text{
-        font-size: 8px;
-    }
     .advantages__item{
-        max-width: 100px !important;
+        max-width: 180px !important;
     }
     .swiper-container{
         text-align: right;
         position: absolute;
-        bottom: -75.6%;
+        bottom: -72.2%;
     }
     .swiper__img{
         max-width: 290px;
         width: 100% !important;
+    }
+    .header__title{
+        font-size: 20px;
+    }
+    .header{
+        top: 20px;
+    }
+    .aboute__video iframe{
+        height: 100% !important;
+    }
+}
+@media (max-width: 320px){
+    .header__list{
+        margin-top: 20px;
+    }
+    .bg{
+        height: 480px;
+    }
+    .project__images-left{
+        height: 300px;
+    }
+    .project__hover-header__left{
+        padding-top: 5px;
+        padding-bottom: 36px;
+    }
+    .project__hover-button__left{
+        padding-top: 38px;
+    }
+    .swiper-container{
+        text-align: right;
+        position: absolute;
+        bottom: -67%;
     }
 }
